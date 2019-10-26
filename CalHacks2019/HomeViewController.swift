@@ -8,8 +8,8 @@
 
 import UIKit
 
-class HomeViewController: UIViewController {
-    
+class HomeViewController: UIViewController, UINavigationControllerDelegate, UIImagePickerControllerDelegate {
+    var imagePicker: UIImagePickerController!
     let words = ["Cat", "Dog", "Hat"]
 
     @IBOutlet weak var wordOfTheDayLabel: UILabel!
@@ -28,6 +28,16 @@ class HomeViewController: UIViewController {
     }
 
     @IBAction func takePhoto(_ sender: Any) {
+        imagePicker = UIImagePickerController()
+        imagePicker.delegate = self
+        imagePicker.sourceType = .camera
+        
+        present(imagePicker, animated: true, completion: nil)
+    }
+    
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
+        imagePicker.dismiss(animated: true, completion: nil)
+        imageView.image = info[.originalImage] as? UIImage
     }
     
 }
