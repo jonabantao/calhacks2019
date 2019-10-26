@@ -353,8 +353,9 @@
 			baseConfigurationReference = F0F5ACE051F983353B720207 /* Pods-CalHacks2019.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 7WUHJ39627;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = CalHacks2019/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -362,6 +363,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = beaverfever.CalHacks2019;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -372,8 +374,9 @@
 			baseConfigurationReference = FD3AA9FB435DD067E7435585 /* Pods-CalHacks2019.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 7WUHJ39627;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = CalHacks2019/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -381,6 +384,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = beaverfever.CalHacks2019;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
