@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Firebase
 
 class HomeViewController: UIViewController, UINavigationControllerDelegate, UIImagePickerControllerDelegate {
     var imagePicker: UIImagePickerController!
@@ -38,6 +39,38 @@ class HomeViewController: UIViewController, UINavigationControllerDelegate, UIIm
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
         imagePicker.dismiss(animated: true, completion: nil)
         imageView.image = info[.originalImage] as? UIImage
+        
+        sendImageToAPI()
+    }
+    
+    func sendImageToAPI() {
+        
+        // Create VisionImage
+        let image = VisionImage(image: (imageView.image)!)
+        
+        let options = VisionOnDeviceImageLabelerOptions()
+        options.confidenceThreshold = 0.7
+        let labeler = Vision.vision().onDeviceImageLabeler(options: options)
+        
+        // Send to API & get information
+        labeler.process(image) { labels, error in
+            guard error == nil, let labels = labels else { return }
+
+            print("Sent to API")
+            // Task succeeded.
+            for label in labels {
+                let labelText = label.text
+                let entityId = label.entityID
+                let confidence = label.confidence
+                
+                print("label text: \(labelText)")
+                print("entity id: \(String(describing: entityId))")
+                print("confidence: \(String(describing: confidence))")
+            
+            }
+        }
+        
+        
     }
     
 }
