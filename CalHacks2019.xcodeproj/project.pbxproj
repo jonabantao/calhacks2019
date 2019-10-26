@@ -1,0 +1,413 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8DAB1B0D2BED015E339C19C9 /* Pods_CalHacks2019.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 57FE01099B51E481906AB512 /* Pods_CalHacks2019.framework */; };
+		F6D620142364D776002B0247 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6D620132364D776002B0247 /* AppDelegate.swift */; };
+		F6D620162364D776002B0247 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6D620152364D776002B0247 /* SceneDelegate.swift */; };
+		F6D620182364D776002B0247 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6D620172364D776002B0247 /* HomeViewController.swift */; };
+		F6D6201B2364D776002B0247 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F6D620192364D776002B0247 /* Main.storyboard */; };
+		F6D6201D2364D776002B0247 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F6D6201C2364D776002B0247 /* Assets.xcassets */; };
+		F6D620202364D776002B0247 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F6D6201E2364D776002B0247 /* LaunchScreen.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		57FE01099B51E481906AB512 /* Pods_CalHacks2019.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CalHacks2019.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F0F5ACE051F983353B720207 /* Pods-CalHacks2019.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CalHacks2019.debug.xcconfig"; path = "Target Support Files/Pods-CalHacks2019/Pods-CalHacks2019.debug.xcconfig"; sourceTree = "<group>"; };
+		F6D620102364D776002B0247 /* CalHacks2019.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CalHacks2019.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F6D620132364D776002B0247 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F6D620152364D776002B0247 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		F6D620172364D776002B0247 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		F6D6201A2364D776002B0247 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F6D6201C2364D776002B0247 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F6D6201F2364D776002B0247 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F6D620212364D776002B0247 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FD3AA9FB435DD067E7435585 /* Pods-CalHacks2019.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CalHacks2019.release.xcconfig"; path = "Target Support Files/Pods-CalHacks2019/Pods-CalHacks2019.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F6D6200D2364D776002B0247 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8DAB1B0D2BED015E339C19C9 /* Pods_CalHacks2019.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2AFFCB387186C3E02EA66379 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F0F5ACE051F983353B720207 /* Pods-CalHacks2019.debug.xcconfig */,
+				FD3AA9FB435DD067E7435585 /* Pods-CalHacks2019.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		BD705DBD100B4E3EDCEE7F55 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				57FE01099B51E481906AB512 /* Pods_CalHacks2019.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F6D620072364D776002B0247 = {
+			isa = PBXGroup;
+			children = (
+				F6D620122364D776002B0247 /* CalHacks2019 */,
+				F6D620112364D776002B0247 /* Products */,
+				2AFFCB387186C3E02EA66379 /* Pods */,
+				BD705DBD100B4E3EDCEE7F55 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		F6D620112364D776002B0247 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F6D620102364D776002B0247 /* CalHacks2019.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F6D620122364D776002B0247 /* CalHacks2019 */ = {
+			isa = PBXGroup;
+			children = (
+				F6D620132364D776002B0247 /* AppDelegate.swift */,
+				F6D620152364D776002B0247 /* SceneDelegate.swift */,
+				F6D620172364D776002B0247 /* HomeViewController.swift */,
+				F6D620192364D776002B0247 /* Main.storyboard */,
+				F6D6201C2364D776002B0247 /* Assets.xcassets */,
+				F6D6201E2364D776002B0247 /* LaunchScreen.storyboard */,
+				F6D620212364D776002B0247 /* Info.plist */,
+			);
+			path = CalHacks2019;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F6D6200F2364D776002B0247 /* CalHacks2019 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F6D620242364D776002B0247 /* Build configuration list for PBXNativeTarget "CalHacks2019" */;
+			buildPhases = (
+				C6CE11844F7B4D6DD2EE5069 /* [CP] Check Pods Manifest.lock */,
+				F6D6200C2364D776002B0247 /* Sources */,
+				F6D6200D2364D776002B0247 /* Frameworks */,
+				F6D6200E2364D776002B0247 /* Resources */,
+				41A23E62A1D230082997BCC7 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CalHacks2019;
+			productName = CalHacks2019;
+			productReference = F6D620102364D776002B0247 /* CalHacks2019.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F6D620082364D776002B0247 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1110;
+				LastUpgradeCheck = 1110;
+				ORGANIZATIONNAME = "Beaver Fever";
+				TargetAttributes = {
+					F6D6200F2364D776002B0247 = {
+						CreatedOnToolsVersion = 11.1;
+					};
+				};
+			};
+			buildConfigurationList = F6D6200B2364D776002B0247 /* Build configuration list for PBXProject "CalHacks2019" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F6D620072364D776002B0247;
+			productRefGroup = F6D620112364D776002B0247 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F6D6200F2364D776002B0247 /* CalHacks2019 */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F6D6200E2364D776002B0247 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F6D620202364D776002B0247 /* LaunchScreen.storyboard in Resources */,
+				F6D6201D2364D776002B0247 /* Assets.xcassets in Resources */,
+				F6D6201B2364D776002B0247 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		41A23E62A1D230082997BCC7 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CalHacks2019/Pods-CalHacks2019-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CalHacks2019/Pods-CalHacks2019-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CalHacks2019/Pods-CalHacks2019-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C6CE11844F7B4D6DD2EE5069 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CalHacks2019-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F6D6200C2364D776002B0247 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F6D620182364D776002B0247 /* HomeViewController.swift in Sources */,
+				F6D620142364D776002B0247 /* AppDelegate.swift in Sources */,
+				F6D620162364D776002B0247 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		F6D620192364D776002B0247 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F6D6201A2364D776002B0247 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F6D6201E2364D776002B0247 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F6D6201F2364D776002B0247 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F6D620222364D776002B0247 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F6D620232364D776002B0247 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F6D620252364D776002B0247 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F0F5ACE051F983353B720207 /* Pods-CalHacks2019.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7WUHJ39627;
+				INFOPLIST_FILE = CalHacks2019/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = beaverfever.CalHacks2019;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F6D620262364D776002B0247 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FD3AA9FB435DD067E7435585 /* Pods-CalHacks2019.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7WUHJ39627;
+				INFOPLIST_FILE = CalHacks2019/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = beaverfever.CalHacks2019;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F6D6200B2364D776002B0247 /* Build configuration list for PBXProject "CalHacks2019" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F6D620222364D776002B0247 /* Debug */,
+				F6D620232364D776002B0247 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F6D620242364D776002B0247 /* Build configuration list for PBXNativeTarget "CalHacks2019" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F6D620252364D776002B0247 /* Debug */,
+				F6D620262364D776002B0247 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F6D620082364D776002B0247 /* Project object */;
+}
