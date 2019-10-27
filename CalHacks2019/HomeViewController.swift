@@ -93,7 +93,7 @@ class HomeViewController: UIViewController, UINavigationControllerDelegate, UIIm
                     // set boolean flag
                     self.goodPicture = true
                     self.performSegue(withIdentifier: "ResultsSegue", sender: self)
-                    
+                        print("called after segue success")
                 }
             
             }

@@ -7,9 +7,10 @@
 //
 
 import UIKit
+import AVFoundation
 
-class ResultsViewController: UIViewController {
-
+class ResultsViewController: UIViewController, AVAudioPlayerDelegate {
+    var audioPlayer : AVAudioPlayer!
     @IBOutlet weak var resultLabel: UILabel!
     @IBOutlet weak var textLabel: UILabel!
     @IBOutlet weak var scoreLabel: UILabel!
@@ -17,16 +18,18 @@ class ResultsViewController: UIViewController {
     var isCorrect = false
     var counter = 0
     
-    let defaults = UserDefaults.standard
+    let soundArray = ["success", "wompwomp"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         if (isCorrect) {
             setupSuccessModal()
+            playSound(soundFileName : soundArray[0])
         }
         else {
             setupFailureModal()
+            playSound(soundFileName : soundArray[1])
         }
         
         scoreLabel.text = "Current score: \(counter)"
@@ -51,6 +54,19 @@ class ResultsViewController: UIViewController {
         
         resultLabel.text = "Sorry"
         textLabel.text = "Unfortunately none of the objects in your photo matched"
+    }
+    
+    func playSound(soundFileName : String) {
+        let soundURL = Bundle.main.url(forResource: soundFileName, withExtension: "wav")
+        
+        do {
+            audioPlayer = try AVAudioPlayer(contentsOf: soundURL!)
+        }
+        catch {
+            print(error)
+        }
+        
+        audioPlayer.play()
     }
     
 
