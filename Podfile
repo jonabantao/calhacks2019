@@ -8,4 +8,5 @@ target 'CalHacks2019' do
   # Pods for CalHacks2019
   pod 'Firebase/MLVision'
   pod 'Alamofire'
+  pod 'AlamofireImage'
 end

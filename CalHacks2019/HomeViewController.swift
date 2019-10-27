@@ -8,13 +8,20 @@
 
 import UIKit
 import Firebase
+import AlamofireImage
 
 class HomeViewController: UIViewController, UINavigationControllerDelegate, UIImagePickerControllerDelegate {
     var imagePicker: UIImagePickerController!
     var count = 0
     var goodPicture: Bool = false
-    let words = ["Cat", "Dog", "Hat"]
+    let wordsAndImages = [
+        "Cat": "https://i.imgur.com/t6bMWca.jpg",
+        "Dog": "https://i.imgur.com/o8v5fF0.jpg",
+        "Hat": "https://i.imgur.com/LOaPUPI.jpg",
+        "Plant": "https://i.imgur.com/jY8r55C.jpg",
+    ]
     var savedWord = ""
+    var savedImage: UIImage!
 
     @IBOutlet weak var wordOfTheDayLabel: UILabel!
     @IBOutlet weak var imageView: UIImageView!
@@ -27,7 +34,7 @@ class HomeViewController: UIViewController, UINavigationControllerDelegate, UIIm
             self.savedWord = savedWord
         }
         else {
-            if let randomWord = words.randomElement() {
+            if let (randomWord, _) = wordsAndImages.randomElement() {
                 self.savedWord = randomWord
                 UserDefaults.standard.set(randomWord, forKey: "word")
             }
@@ -59,7 +66,7 @@ class HomeViewController: UIViewController, UINavigationControllerDelegate, UIIm
     
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
         imagePicker.dismiss(animated: true, completion: nil)
-        imageView.image = info[.originalImage] as? UIImage
+        self.savedImage = info[.originalImage] as? UIImage
         
         sendImageToAPI()
     }
@@ -67,7 +74,7 @@ class HomeViewController: UIViewController, UINavigationControllerDelegate, UIIm
     func sendImageToAPI() {
         
         // Create VisionImage
-        let image = VisionImage(image: (imageView.image)!)
+        let image = VisionImage(image: (self.savedImage)!)
         
         let options = VisionCloudImageLabelerOptions()
         options.confidenceThreshold = 0.7
@@ -121,14 +128,18 @@ class HomeViewController: UIViewController, UINavigationControllerDelegate, UIIm
         
         count = 0
         savedWord = ""
+        // TODO Shuffle Array
         
         updateLabels()
      }
     
     private func updateLabels() {
+        let wordURL = wordsAndImages[self.savedWord]!
+        let imageURL = URL(string: wordURL)!
+        
         self.wordOfTheDayLabel.text = savedWord
         self.score.text = "Score: \(self.count)"
-
+        self.imageView.af_setImage(withURL: imageURL)
     }
     
 }
