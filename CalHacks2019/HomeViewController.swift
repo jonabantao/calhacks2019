@@ -11,6 +11,8 @@ import Firebase
 
 class HomeViewController: UIViewController, UINavigationControllerDelegate, UIImagePickerControllerDelegate {
     var imagePicker: UIImagePickerController!
+    var count: Int = 0
+    var goodPicture: Bool = false
     let words = ["Cat", "Dog", "Hat"]
 
     @IBOutlet weak var wordOfTheDayLabel: UILabel!
@@ -48,15 +50,15 @@ class HomeViewController: UIViewController, UINavigationControllerDelegate, UIIm
         // Create VisionImage
         let image = VisionImage(image: (imageView.image)!)
         
-        let options = VisionOnDeviceImageLabelerOptions()
+        let options = VisionCloudImageLabelerOptions()
         options.confidenceThreshold = 0.7
-        let labeler = Vision.vision().onDeviceImageLabeler(options: options)
+        let labeler = Vision.vision().cloudImageLabeler(options: options)
         
         // Send to API & get information
         labeler.process(image) { labels, error in
             guard error == nil, let labels = labels else { return }
 
-            print("Sent to API")
+            print("*************Sent to API***************")
             // Task succeeded.
             for label in labels {
                 let labelText = label.text
@@ -66,12 +68,33 @@ class HomeViewController: UIViewController, UINavigationControllerDelegate, UIIm
                 print("label text: \(labelText)")
                 print("entity id: \(String(describing: entityId))")
                 print("confidence: \(String(describing: confidence))")
+                
+                if label.text == self.wordOfTheDayLabel.text {
+                    //increment count
+                    self.count = self.count + 1
+                    // set boolean flag
+                    self.goodPicture = true
+                    self.performSegue(withIdentifier: "ResultsSegue", sender: self)
+                    
+                }
             
             }
+            // no match sorry :(
+            self.goodPicture = false
+            self.performSegue(withIdentifier: "ResultsSegue", sender: self)
+            
         }
         
         
     }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        var vc = segue.destination as! ResultsViewController
+        vc.isCorrect = self.goodPicture
+        vc.counter = self.count
+    }
+    
+    
     
 }
 
