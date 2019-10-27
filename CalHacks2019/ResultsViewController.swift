@@ -13,11 +13,24 @@ class ResultsViewController: UIViewController {
     @IBOutlet weak var resultLabel: UILabel!
     @IBOutlet weak var textLabel: UILabel!
     @IBOutlet weak var scoreLabel: UILabel!
+    var isCorrect = false
+    var counter = 0
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        if (isCorrect) {
+            resultLabel.textColor = UIColor.green
+            resultLabel.text = "You did it!"
+            textLabel.text = "One of the images you took a picture of matched the word of the day."
+        }
+        else {
+            resultLabel.textColor = UIColor.red
+            resultLabel.text = "Sorry"
+            textLabel.text = "Unfortunately none of the objects in your photo matched"
+        }
+        
+        scoreLabel.text = "Current score: \(counter)"
     }
     
 
