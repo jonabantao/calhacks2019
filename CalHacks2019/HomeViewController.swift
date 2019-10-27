@@ -53,6 +53,10 @@ class HomeViewController: UIViewController, UINavigationControllerDelegate, UIIm
         
         view.layer.insertSublayer(layer, at: 0)
         
+        imageView.layer.cornerRadius = imageView.frame.size.height * (1 / 8)
+        imageView.layer.masksToBounds = true
+        imageView.layer.borderWidth = 0
+        
         updateLabels()
     }
 

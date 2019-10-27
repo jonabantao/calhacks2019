@@ -44,7 +44,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="DW8-4C-luV">
-                                <rect key="frame" x="40" y="145" width="294" height="306"/>
+                                <rect key="frame" x="40" y="148" width="294" height="306"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="306" id="WZF-vr-ds0"/>
                                 </constraints>
@@ -65,9 +65,9 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WqC-R7-2oW">
-                                <rect key="frame" x="137" y="490" width="100" height="100"/>
+                                <rect key="frame" x="133" y="481" width="108" height="109"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" secondItem="WqC-R7-2oW" secondAttribute="height" multiplier="1:1" id="7sC-X8-rqv"/>
+                                    <constraint firstAttribute="width" secondItem="WqC-R7-2oW" secondAttribute="height" multiplier="1:1" constant="-1" id="7sC-X8-rqv"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="32"/>
                                 <state key="normal" image="hiclipart-camera"/>
@@ -80,21 +80,21 @@
                         <constraints>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="AEJ-zz-6xs" secondAttribute="trailing" constant="27" id="0zf-8Z-aaH"/>
                             <constraint firstItem="ouR-jB-n8k" firstAttribute="top" secondItem="AEJ-zz-6xs" secondAttribute="bottom" constant="10" id="3c7-2H-FQh"/>
-                            <constraint firstItem="WqC-R7-2oW" firstAttribute="top" secondItem="DW8-4C-luV" secondAttribute="bottom" constant="39" id="88G-GB-boQ"/>
+                            <constraint firstItem="WqC-R7-2oW" firstAttribute="top" secondItem="DW8-4C-luV" secondAttribute="bottom" constant="27" id="88G-GB-boQ"/>
                             <constraint firstItem="AEJ-zz-6xs" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="47" id="GsK-7V-6Vk"/>
                             <constraint firstItem="DW8-4C-luV" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="40" id="HR9-8E-Nbe"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="WqC-R7-2oW" secondAttribute="trailing" constant="138" id="QdB-gm-OTC"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="WqC-R7-2oW" secondAttribute="trailing" constant="134" id="QdB-gm-OTC"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="2Ie-q7-TIQ" secondAttribute="bottom" constant="20" id="XZn-Am-8l6"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="mzD-Wd-r84" secondAttribute="bottom" constant="14" id="bF5-B0-jXe"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="2Ie-q7-TIQ" secondAttribute="trailing" constant="27" id="cLx-Fp-qM9"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ouR-jB-n8k" secondAttribute="trailing" constant="41" id="dgs-ZM-kRz"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="WqC-R7-2oW" secondAttribute="bottom" constant="77" id="eLj-m7-PKl"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="DW8-4C-luV" secondAttribute="trailing" constant="41" id="fhp-BX-GgN"/>
-                            <constraint firstItem="DW8-4C-luV" firstAttribute="top" secondItem="ouR-jB-n8k" secondAttribute="bottom" constant="16" id="glh-En-hzZ"/>
+                            <constraint firstItem="DW8-4C-luV" firstAttribute="top" secondItem="ouR-jB-n8k" secondAttribute="bottom" constant="19" id="glh-En-hzZ"/>
                             <constraint firstItem="mzD-Wd-r84" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="juK-Fh-AfR"/>
                             <constraint firstItem="ouR-jB-n8k" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="40" id="oWE-50-7tS"/>
                             <constraint firstItem="AEJ-zz-6xs" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="27" id="qRC-gB-3U1"/>
-                            <constraint firstItem="WqC-R7-2oW" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="137" id="tXv-GG-i0E"/>
+                            <constraint firstItem="WqC-R7-2oW" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="133" id="tXv-GG-i0E"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
