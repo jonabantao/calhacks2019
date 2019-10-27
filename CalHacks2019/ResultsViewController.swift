@@ -31,7 +31,11 @@ class ResultsViewController: UIViewController {
     }
     
     private func setupSuccessModal() {
-        resultLabel.textColor = UIColor.green
+        let layer = CAGradientLayer()
+        layer.frame = view.bounds
+        layer.colors = [UIColor.systemGreen.cgColor, UIColor.systemTeal.cgColor]
+        
+        view.layer.insertSublayer(layer, at: 0)
         resultLabel.text = "You did it!"
         textLabel.text = "One of the images you took a picture of matched the word of the day."
     }
