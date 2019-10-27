@@ -2,9 +2,9 @@ PODS:
   - Alamofire (4.9.0)
   - Firebase/CoreOnly (6.11.0):
     - FirebaseCore (= 6.3.2)
-  - Firebase/MLVisionLabelModel (6.11.0):
+  - Firebase/MLVision (6.11.0):
     - Firebase/CoreOnly
-    - FirebaseMLVisionLabelModel (~> 0.19.0)
+    - FirebaseMLVision (~> 0.19.0)
   - FirebaseCore (6.3.2):
     - FirebaseCoreDiagnostics (~> 1.0)
     - FirebaseCoreDiagnosticsInterop (~> 1.0)
@@ -39,8 +39,6 @@ PODS:
     - "GoogleToolboxForMac/NSData+zlib (~> 2.1)"
     - GTMSessionFetcher/Core (~> 1.1)
     - Protobuf (~> 3.5)
-  - FirebaseMLVisionLabelModel (0.19.0):
-    - FirebaseMLVision (~> 0.19)
   - GoogleAPIClientForREST/Core (1.3.10):
     - GTMSessionFetcher (>= 1.1.7)
   - GoogleAPIClientForREST/Vision (1.3.10):
@@ -81,7 +79,7 @@ PODS:
 
 DEPENDENCIES:
   - Alamofire
-  - Firebase/MLVisionLabelModel
+  - Firebase/MLVision
 
 SPEC REPOS:
   trunk:
@@ -93,7 +91,6 @@ SPEC REPOS:
     - FirebaseInstanceID
     - FirebaseMLCommon
     - FirebaseMLVision
-    - FirebaseMLVisionLabelModel
     - GoogleAPIClientForREST
     - GoogleDataTransport
     - GoogleDataTransportCCTSupport
@@ -112,7 +109,6 @@ SPEC CHECKSUMS:
   FirebaseInstanceID: d0eafcd8bdbd3447cd694594734078c3e3e77d8b
   FirebaseMLCommon: 074a67e05122b1c9f6401a4e33b2cea3b4efd224
   FirebaseMLVision: 7a456009787690e3b53436092ae9b635563de8f3
-  FirebaseMLVisionLabelModel: 7638a20d27219d5baa4b534a62375fc1d5bd077d
   GoogleAPIClientForREST: 4acfffd77f1c3c8741b6be9eaed0e603278efbde
   GoogleDataTransport: 166f9b9f82cbf60a204e8fe2daa9db3e3ec1fb15
   GoogleDataTransportCCTSupport: f6ab1962e9dc05ab1fb938b795e5b310209edeec
@@ -122,6 +118,6 @@ SPEC CHECKSUMS:
   nanopb: 18003b5e52dab79db540fe93fe9579f399bd1ccd
   Protobuf: a4dc852ad69c027ca2166ed287b856697814375b
 
-PODFILE CHECKSUM: 58266184c9f3e265190ff342587e7a3dec2990bf
+PODFILE CHECKSUM: 9863bdb897f175040206f832b621c0e30599c5a8
 
 COCOAPODS: 1.8.4
