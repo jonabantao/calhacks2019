@@ -33,7 +33,7 @@
 		F0F5ACE051F983353B720207 /* Pods-CalHacks2019.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CalHacks2019.debug.xcconfig"; path = "Target Support Files/Pods-CalHacks2019/Pods-CalHacks2019.debug.xcconfig"; sourceTree = "<group>"; };
 		F6A638B423658C3000F41D70 /* SpinnerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpinnerViewController.swift; sourceTree = "<group>"; };
 		F6B01E662365293700D7F2F3 /* ResultsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultsViewController.swift; sourceTree = "<group>"; };
-		F6D620102364D776002B0247 /* CalHacks2019.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CalHacks2019.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F6D620102364D776002B0247 /* Learning Lens.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Learning Lens.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F6D620132364D776002B0247 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F6D620152364D776002B0247 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		F6D620172364D776002B0247 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
@@ -102,7 +102,7 @@
 		F6D620112364D776002B0247 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				F6D620102364D776002B0247 /* CalHacks2019.app */,
+				F6D620102364D776002B0247 /* Learning Lens.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -147,7 +147,7 @@
 			);
 			name = CalHacks2019;
 			productName = CalHacks2019;
-			productReference = F6D620102364D776002B0247 /* CalHacks2019.app */;
+			productReference = F6D620102364D776002B0247 /* Learning Lens.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -406,7 +406,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = beaverfever.CalHacks20191;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Learning Lens";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -427,7 +427,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = beaverfever.CalHacks20191;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Learning Lens";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
