@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		8DAB1B0D2BED015E339C19C9 /* Pods_CalHacks2019.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 57FE01099B51E481906AB512 /* Pods_CalHacks2019.framework */; };
+		DA3A6AEE236590E5006D0031 /* splash.png in Resources */ = {isa = PBXBuildFile; fileRef = DA3A6AED236590E5006D0031 /* splash.png */; };
+		DA3A6AF023659656006D0031 /* icon-logo.png in Resources */ = {isa = PBXBuildFile; fileRef = DA3A6AEF23659656006D0031 /* icon-logo.png */; };
 		DA76AE642365396A0017DA44 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = DA76AE632365396A0017DA44 /* GoogleService-Info.plist */; };
 		DA76AE6623654BF80017DA44 /* success.wav in Resources */ = {isa = PBXBuildFile; fileRef = DA76AE6523654BF70017DA44 /* success.wav */; };
 		DA76AE6823654C010017DA44 /* wompwomp.wav in Resources */ = {isa = PBXBuildFile; fileRef = DA76AE6723654C010017DA44 /* wompwomp.wav */; };
@@ -23,6 +25,8 @@
 
 /* Begin PBXFileReference section */
 		57FE01099B51E481906AB512 /* Pods_CalHacks2019.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CalHacks2019.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DA3A6AED236590E5006D0031 /* splash.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = splash.png; path = ../../../Downloads/splash.png; sourceTree = "<group>"; };
+		DA3A6AEF23659656006D0031 /* icon-logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "icon-logo.png"; path = "../../../Downloads/icon-logo.png"; sourceTree = "<group>"; };
 		DA76AE632365396A0017DA44 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		DA76AE6523654BF70017DA44 /* success.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = success.wav; sourceTree = "<group>"; };
 		DA76AE6723654C010017DA44 /* wompwomp.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = wompwomp.wav; sourceTree = "<group>"; };
@@ -115,7 +119,9 @@
 				F6B01E662365293700D7F2F3 /* ResultsViewController.swift */,
 				F6D6201C2364D776002B0247 /* Assets.xcassets */,
 				F6D6201E2364D776002B0247 /* LaunchScreen.storyboard */,
+				DA3A6AED236590E5006D0031 /* splash.png */,
 				F6D620212364D776002B0247 /* Info.plist */,
+				DA3A6AEF23659656006D0031 /* icon-logo.png */,
 				DA76AE632365396A0017DA44 /* GoogleService-Info.plist */,
 				DA76AE6923654C0C0017DA44 /* sound */,
 			);
@@ -182,10 +188,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DA3A6AEE236590E5006D0031 /* splash.png in Resources */,
 				DA76AE6623654BF80017DA44 /* success.wav in Resources */,
 				F6D620202364D776002B0247 /* LaunchScreen.storyboard in Resources */,
 				DA76AE642365396A0017DA44 /* GoogleService-Info.plist in Resources */,
 				F6D6201D2364D776002B0247 /* Assets.xcassets in Resources */,
+				DA3A6AF023659656006D0031 /* icon-logo.png in Resources */,
 				DA76AE6823654C010017DA44 /* wompwomp.wav in Resources */,
 				F6D6201B2364D776002B0247 /* Main.storyboard in Resources */,
 			);
