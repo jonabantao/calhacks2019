@@ -17,6 +17,8 @@ class ResultsViewController: UIViewController {
     var isCorrect = false
     var counter = 0
     
+    let defaults = UserDefaults.standard
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 

@@ -11,15 +11,27 @@ import Firebase
 
 class HomeViewController: UIViewController, UINavigationControllerDelegate, UIImagePickerControllerDelegate {
     var imagePicker: UIImagePickerController!
-    var count: Int = 0
+    var count = 0
     var goodPicture: Bool = false
     let words = ["Cat", "Dog", "Hat"]
+    var savedWord = ""
 
     @IBOutlet weak var wordOfTheDayLabel: UILabel!
-    @IBOutlet weak var resultsLabel: UILabel!
     @IBOutlet weak var imageView: UIImageView!
     @IBOutlet weak var score: UILabel!
-    
+ 
+    override func loadView() {
+        if let savedWord = UserDefaults.standard.string(forKey: "word") {
+            self.savedWord = savedWord
+        }
+        else {
+            if let randomWord = words.randomElement() {
+                wordOfTheDayLabel.text = randomWord
+                UserDefaults.standard.set(randomWord, forKey: "word")
+            }
+        }
+        self.count = UserDefaults.standard.integer(forKey: "count")
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -31,10 +43,6 @@ class HomeViewController: UIViewController, UINavigationControllerDelegate, UIIm
         
         view.layer.insertSublayer(layer, at: 0)
         
-        
-        if let randomWord = words.randomElement() {
-            wordOfTheDayLabel.text = randomWord
-        }
     }
 
     @IBAction func takePhoto(_ sender: Any) {
@@ -79,6 +87,8 @@ class HomeViewController: UIViewController, UINavigationControllerDelegate, UIIm
                 if label.text == self.wordOfTheDayLabel.text {
                     //increment count
                     self.count = self.count + 1
+                    UserDefaults.standard.set(self.count, forKey:"count")
+                    
                     self.score.text = "Score: \(self.count)"
                     // set boolean flag
                     self.goodPicture = true
@@ -90,9 +100,7 @@ class HomeViewController: UIViewController, UINavigationControllerDelegate, UIIm
             // no match sorry :(
             self.goodPicture = false
             self.performSegue(withIdentifier: "ResultsSegue", sender: self)
-            
         }
-        
         
     }
     
@@ -100,10 +108,24 @@ class HomeViewController: UIViewController, UINavigationControllerDelegate, UIIm
         let vc = segue.destination as! ResultsViewController
         vc.isCorrect = self.goodPicture
         vc.counter = self.count
-        vc.pictureTaken = self.imageView.image
+        vc.pictureTaken.image = self.imageView.image
     }
     
+    @IBAction func resetGame(_ sender: Any) {
+        UserDefaults.standard.removeObject(forKey: "word")
+        UserDefaults.standard.removeObject(forKey: "count")
+        
+        count = 0
+        savedWord = ""
+        
+        updateLabels()
+     }
     
+    private func updateLabels() {
+        self.wordOfTheDayLabel.text = savedWord
+        self.score.text = "Score: \(self.count)"
+
+    }
     
 }
 
