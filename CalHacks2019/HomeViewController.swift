@@ -21,16 +21,19 @@ class HomeViewController: UIViewController, UINavigationControllerDelegate, UIIm
     @IBOutlet weak var score: UILabel!
  
     override func loadView() {
+        super.loadView()
+        
         if let savedWord = UserDefaults.standard.string(forKey: "word") {
             self.savedWord = savedWord
         }
         else {
             if let randomWord = words.randomElement() {
-                wordOfTheDayLabel.text = randomWord
+                self.savedWord = randomWord
                 UserDefaults.standard.set(randomWord, forKey: "word")
             }
         }
         self.count = UserDefaults.standard.integer(forKey: "count")
+
     }
     
     override func viewDidLoad() {
@@ -43,6 +46,7 @@ class HomeViewController: UIViewController, UINavigationControllerDelegate, UIIm
         
         view.layer.insertSublayer(layer, at: 0)
         
+        updateLabels()
     }
 
     @IBAction func takePhoto(_ sender: Any) {
