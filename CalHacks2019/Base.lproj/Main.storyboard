@@ -69,6 +69,7 @@
                     <connections>
                         <outlet property="imageView" destination="DW8-4C-luV" id="iFc-23-5QP"/>
                         <outlet property="resultsLabel" destination="Xec-hN-mWL" id="ag3-OY-Ogp"/>
+                        <outlet property="score" destination="mzD-Wd-r84" id="7d6-Ob-CIU"/>
                         <outlet property="wordOfTheDayLabel" destination="ouR-jB-n8k" id="wcY-0E-9A4"/>
                         <segue destination="6Ep-Rm-9Uq" kind="presentation" identifier="ResultsSegue" id="wL1-fV-aRq"/>
                     </connections>

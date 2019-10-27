@@ -18,6 +18,7 @@ class HomeViewController: UIViewController, UINavigationControllerDelegate, UIIm
     @IBOutlet weak var wordOfTheDayLabel: UILabel!
     @IBOutlet weak var resultsLabel: UILabel!
     @IBOutlet weak var imageView: UIImageView!
+    @IBOutlet weak var score: UILabel!
     
     
     override func viewDidLoad() {
@@ -78,6 +79,7 @@ class HomeViewController: UIViewController, UINavigationControllerDelegate, UIIm
                 if label.text == self.wordOfTheDayLabel.text {
                     //increment count
                     self.count = self.count + 1
+                    self.score.text = "Score: \(self.count)"
                     // set boolean flag
                     self.goodPicture = true
                     self.performSegue(withIdentifier: "ResultsSegue", sender: self)
