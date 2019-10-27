@@ -129,6 +129,10 @@ class HomeViewController: UIViewController, UINavigationControllerDelegate, UIIm
         count = 0
         savedWord = ""
         // TODO Shuffle Array
+        if let(randomWord, _) = wordsAndImages.randomElement() {
+            self.savedWord = randomWord
+            UserDefaults.standard.set(randomWord, forKey:"word")
+        }
         
         updateLabels()
      }
