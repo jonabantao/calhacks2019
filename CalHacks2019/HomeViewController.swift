@@ -100,6 +100,7 @@ class HomeViewController: UIViewController, UINavigationControllerDelegate, UIIm
         let vc = segue.destination as! ResultsViewController
         vc.isCorrect = self.goodPicture
         vc.counter = self.count
+        vc.pictureTaken = self.imageView.image
     }
     
     
