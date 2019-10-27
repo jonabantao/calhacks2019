@@ -67,6 +67,7 @@ class HomeViewController: UIViewController, UINavigationControllerDelegate, UIIm
         imagePicker.sourceType = .camera
 
         present(imagePicker, animated: true, completion: nil)
+        createSpinnerView()
     }
     
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
@@ -77,9 +78,7 @@ class HomeViewController: UIViewController, UINavigationControllerDelegate, UIIm
     }
     
     func sendImageToAPI() {
-        createSpinnerView()
-        
-        // Create VisionImage
+                // Create VisionImage
         let image = VisionImage(image: (self.savedImage)!)
         
         let options = VisionCloudImageLabelerOptions()
