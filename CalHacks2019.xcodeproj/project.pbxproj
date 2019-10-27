@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		8DAB1B0D2BED015E339C19C9 /* Pods_CalHacks2019.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 57FE01099B51E481906AB512 /* Pods_CalHacks2019.framework */; };
 		F63A27D52365348400B3456A /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F63A27D42365348400B3456A /* GoogleService-Info.plist */; };
+		DAA709452365362B0093BD56 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = DAA709442365362B0093BD56 /* GoogleService-Info.plist */; };
 		F6B01E672365293700D7F2F3 /* ResultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6B01E662365293700D7F2F3 /* ResultsViewController.swift */; };
 		F6D620142364D776002B0247 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6D620132364D776002B0247 /* AppDelegate.swift */; };
 		F6D620162364D776002B0247 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6D620152364D776002B0247 /* SceneDelegate.swift */; };
@@ -21,6 +22,8 @@
 /* Begin PBXFileReference section */
 		57FE01099B51E481906AB512 /* Pods_CalHacks2019.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CalHacks2019.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA8341CB23650C93000BFAAE /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		DA8341CD236511B8000BFAAE /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		DAA709442365362B0093BD56 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		F0F5ACE051F983353B720207 /* Pods-CalHacks2019.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CalHacks2019.debug.xcconfig"; path = "Target Support Files/Pods-CalHacks2019/Pods-CalHacks2019.debug.xcconfig"; sourceTree = "<group>"; };
 		F63A27D42365348400B3456A /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		F6B01E662365293700D7F2F3 /* ResultsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultsViewController.swift; sourceTree = "<group>"; };
@@ -94,6 +97,8 @@
 				F6D6201E2364D776002B0247 /* LaunchScreen.storyboard */,
 				F6D620212364D776002B0247 /* Info.plist */,
 				F63A27D42365348400B3456A /* GoogleService-Info.plist */,
+				DAA709442365362B0093BD56 /* GoogleService-Info.plist */,
+				DA8341CD236511B8000BFAAE /* GoogleService-Info.plist */,
 			);
 			path = CalHacks2019;
 			sourceTree = "<group>";
@@ -160,6 +165,7 @@
 			files = (
 				F6D620202364D776002B0247 /* LaunchScreen.storyboard in Resources */,
 				F63A27D52365348400B3456A /* GoogleService-Info.plist in Resources */,
+				DAA709452365362B0093BD56 /* GoogleService-Info.plist in Resources */,
 				F6D6201D2364D776002B0247 /* Assets.xcassets in Resources */,
 				F6D6201B2364D776002B0247 /* Main.storyboard in Resources */,
 			);

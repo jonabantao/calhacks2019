@@ -95,7 +95,7 @@ class HomeViewController: UIViewController, UINavigationControllerDelegate, UIIm
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        var vc = segue.destination as! ResultsViewController
+        let vc = segue.destination as! ResultsViewController
         vc.isCorrect = self.goodPicture
         vc.counter = self.count
     }
