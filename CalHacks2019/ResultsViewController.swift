@@ -13,6 +13,7 @@ class ResultsViewController: UIViewController {
     @IBOutlet weak var resultLabel: UILabel!
     @IBOutlet weak var textLabel: UILabel!
     @IBOutlet weak var scoreLabel: UILabel!
+    @IBOutlet weak var pictureTaken: UIImageView!
     var isCorrect = false
     var counter = 0
     
@@ -20,17 +21,30 @@ class ResultsViewController: UIViewController {
         super.viewDidLoad()
 
         if (isCorrect) {
-            resultLabel.textColor = UIColor.green
-            resultLabel.text = "You did it!"
-            textLabel.text = "One of the images you took a picture of matched the word of the day."
+            setupSuccessModal()
         }
         else {
-            resultLabel.textColor = UIColor.red
-            resultLabel.text = "Sorry"
-            textLabel.text = "Unfortunately none of the objects in your photo matched"
+            setupFailureModal()
         }
         
         scoreLabel.text = "Current score: \(counter)"
+    }
+    
+    private func setupSuccessModal() {
+        resultLabel.textColor = UIColor.green
+        resultLabel.text = "You did it!"
+        textLabel.text = "One of the images you took a picture of matched the word of the day."
+    }
+    
+    private func setupFailureModal() {
+        let layer = CAGradientLayer()
+        layer.frame = view.bounds
+        layer.colors = [UIColor.systemRed.cgColor, UIColor.systemPink.cgColor]
+        
+        view.layer.insertSublayer(layer, at: 0)
+        
+        resultLabel.text = "Sorry"
+        textLabel.text = "Unfortunately none of the objects in your photo matched"
     }
     
 
