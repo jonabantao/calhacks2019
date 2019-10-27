@@ -22,6 +22,7 @@ class HomeViewController: UIViewController, UINavigationControllerDelegate, UIIm
     ]
     var savedWord = ""
     var savedImage: UIImage!
+    var spinnerView: UIViewController?
 
     @IBOutlet weak var wordOfTheDayLabel: UILabel!
     @IBOutlet weak var imageView: UIImageView!
@@ -64,7 +65,7 @@ class HomeViewController: UIViewController, UINavigationControllerDelegate, UIIm
         imagePicker = UIImagePickerController()
         imagePicker.delegate = self
         imagePicker.sourceType = .camera
-        
+
         present(imagePicker, animated: true, completion: nil)
     }
     
@@ -76,6 +77,7 @@ class HomeViewController: UIViewController, UINavigationControllerDelegate, UIIm
     }
     
     func sendImageToAPI() {
+        createSpinnerView()
         
         // Create VisionImage
         let image = VisionImage(image: (self.savedImage)!)
@@ -89,6 +91,7 @@ class HomeViewController: UIViewController, UINavigationControllerDelegate, UIIm
             guard error == nil, let labels = labels else { return }
 
             print("*************Sent to API***************")
+            self.removeSpinnerView()
             // Task succeeded.
             for label in labels {
                 let labelText = label.text
@@ -123,7 +126,7 @@ class HomeViewController: UIViewController, UINavigationControllerDelegate, UIIm
         let vc = segue.destination as! ResultsViewController
         vc.isCorrect = self.goodPicture
         vc.counter = self.count
-        vc.picture = self.imageView.image!
+        vc.picture = self.savedImage
     }
     
     @IBAction func resetGame(_ sender: Any) {
@@ -132,7 +135,7 @@ class HomeViewController: UIViewController, UINavigationControllerDelegate, UIIm
         
         count = 0
         savedWord = ""
-        // TODO Shuffle Array
+
         if let(randomWord, _) = wordsAndImages.randomElement() {
             self.savedWord = randomWord
             UserDefaults.standard.set(randomWord, forKey:"word")
@@ -150,5 +153,25 @@ class HomeViewController: UIViewController, UINavigationControllerDelegate, UIIm
         self.imageView.af_setImage(withURL: imageURL)
     }
     
+    private func createSpinnerView() {
+        let child = SpinnerViewController()
+
+        addChild(child)
+        child.view.frame = view.frame
+        view.addSubview(child.view)
+        child.didMove(toParent: self)
+        
+        self.spinnerView = child
+    }
+    
+    private func removeSpinnerView() {
+        if self.spinnerView != nil {
+            let child = self.spinnerView!
+            
+            child.willMove(toParent: nil)
+            child.view.removeFromSuperview()
+            child.removeFromParent()
+        }
+    }
 }
 

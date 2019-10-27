@@ -11,6 +11,7 @@
 		DA76AE642365396A0017DA44 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = DA76AE632365396A0017DA44 /* GoogleService-Info.plist */; };
 		DA76AE6623654BF80017DA44 /* success.wav in Resources */ = {isa = PBXBuildFile; fileRef = DA76AE6523654BF70017DA44 /* success.wav */; };
 		DA76AE6823654C010017DA44 /* wompwomp.wav in Resources */ = {isa = PBXBuildFile; fileRef = DA76AE6723654C010017DA44 /* wompwomp.wav */; };
+		F6A638B523658C3000F41D70 /* SpinnerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6A638B423658C3000F41D70 /* SpinnerViewController.swift */; };
 		F6B01E672365293700D7F2F3 /* ResultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6B01E662365293700D7F2F3 /* ResultsViewController.swift */; };
 		F6D620142364D776002B0247 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6D620132364D776002B0247 /* AppDelegate.swift */; };
 		F6D620162364D776002B0247 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6D620152364D776002B0247 /* SceneDelegate.swift */; };
@@ -26,6 +27,7 @@
 		DA76AE6523654BF70017DA44 /* success.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = success.wav; sourceTree = "<group>"; };
 		DA76AE6723654C010017DA44 /* wompwomp.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = wompwomp.wav; sourceTree = "<group>"; };
 		F0F5ACE051F983353B720207 /* Pods-CalHacks2019.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CalHacks2019.debug.xcconfig"; path = "Target Support Files/Pods-CalHacks2019/Pods-CalHacks2019.debug.xcconfig"; sourceTree = "<group>"; };
+		F6A638B423658C3000F41D70 /* SpinnerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpinnerViewController.swift; sourceTree = "<group>"; };
 		F6B01E662365293700D7F2F3 /* ResultsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultsViewController.swift; sourceTree = "<group>"; };
 		F6D620102364D776002B0247 /* CalHacks2019.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CalHacks2019.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F6D620132364D776002B0247 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -76,6 +78,13 @@
 			path = sound;
 			sourceTree = "<group>";
 		};
+		F6A64CF3236559D4006E4729 /* images */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = images;
+			sourceTree = "<group>";
+		};
 		F6D620072364D776002B0247 = {
 			isa = PBXGroup;
 			children = (
@@ -97,9 +106,11 @@
 		F6D620122364D776002B0247 /* CalHacks2019 */ = {
 			isa = PBXGroup;
 			children = (
+				F6A64CF3236559D4006E4729 /* images */,
 				F6D620132364D776002B0247 /* AppDelegate.swift */,
 				F6D620152364D776002B0247 /* SceneDelegate.swift */,
 				F6D620172364D776002B0247 /* HomeViewController.swift */,
+				F6A638B423658C3000F41D70 /* SpinnerViewController.swift */,
 				F6D620192364D776002B0247 /* Main.storyboard */,
 				F6B01E662365293700D7F2F3 /* ResultsViewController.swift */,
 				F6D6201C2364D776002B0247 /* Assets.xcassets */,
@@ -233,6 +244,7 @@
 				F6D620142364D776002B0247 /* AppDelegate.swift in Sources */,
 				F6D620162364D776002B0247 /* SceneDelegate.swift in Sources */,
 				F6B01E672365293700D7F2F3 /* ResultsViewController.swift in Sources */,
+				F6A638B523658C3000F41D70 /* SpinnerViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
