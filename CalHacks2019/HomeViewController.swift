@@ -24,6 +24,12 @@ class HomeViewController: UIViewController, UINavigationControllerDelegate, UIIm
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         
+        let layer = CAGradientLayer()
+        layer.frame = view.bounds
+        layer.colors = [UIColor.systemPurple.cgColor, UIColor.systemPink.cgColor]
+        
+        view.layer.insertSublayer(layer, at: 0)
+        
         
         if let randomWord = words.randomElement() {
             wordOfTheDayLabel.text = randomWord

@@ -20,6 +20,7 @@
 
 /* Begin PBXFileReference section */
 		57FE01099B51E481906AB512 /* Pods_CalHacks2019.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CalHacks2019.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DA8341CB23650C93000BFAAE /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		F0F5ACE051F983353B720207 /* Pods-CalHacks2019.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CalHacks2019.debug.xcconfig"; path = "Target Support Files/Pods-CalHacks2019/Pods-CalHacks2019.debug.xcconfig"; sourceTree = "<group>"; };
 		F63A27D42365348400B3456A /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		F6B01E662365293700D7F2F3 /* ResultsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultsViewController.swift; sourceTree = "<group>"; };
