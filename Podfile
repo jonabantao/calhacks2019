@@ -6,6 +6,6 @@ target 'CalHacks2019' do
   use_frameworks!
 
   # Pods for CalHacks2019
-  pod 'Firebase/MLVisionLabelModel'
+  pod 'Firebase/MLVision'
   pod 'Alamofire'
 end

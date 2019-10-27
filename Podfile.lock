@@ -1,5 +1,5 @@
 PODS:
-  - Alamofire (4.9.0)
+  - Alamofire (4.9.1)
   - Firebase/CoreOnly (6.11.0):
     - FirebaseCore (= 6.3.2)
   - Firebase/MLVision (6.11.0):
@@ -101,7 +101,7 @@ SPEC REPOS:
     - Protobuf
 
 SPEC CHECKSUMS:
-  Alamofire: afc3e7c6db61476cb45cdd23fed06bad03bbc321
+  Alamofire: 85e8a02c69d6020a0d734f6054870d7ecb75cf18
   Firebase: bc9cfc7a96c73268656d5aaab453ff1b4b530e0e
   FirebaseCore: beeff42c07c30ea94702471d99db2089b594fbbd
   FirebaseCoreDiagnostics: af29e43048607588c050889d19204f4d7b758c9f

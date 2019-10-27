@@ -1,1 +1,6 @@
 Pods/
+xcuserdata/
+GoogleService-Info.plist
+*.moved-aside
+*.xcuserstate
+
