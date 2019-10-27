@@ -17,6 +17,7 @@ class ResultsViewController: UIViewController, AVAudioPlayerDelegate {
     @IBOutlet weak var pictureTaken: UIImageView!
     var isCorrect = false
     var counter = 0
+    var picture: UIImage!
     
     let soundArray = ["success", "wompwomp"]
     
@@ -31,8 +32,8 @@ class ResultsViewController: UIViewController, AVAudioPlayerDelegate {
             setupFailureModal()
             playSound(soundFileName : soundArray[1])
         }
-        
         scoreLabel.text = "Current score: \(counter)"
+        pictureTaken.image = picture
     }
     
     private func setupSuccessModal() {
